@@ -5,25 +5,28 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/*COLORES:*/
 :root{
     --color1: #e7e79d; /*Amarillo*/
     --color2: #c0d890; /*Verde*/
     --color3: #78a890; /*Azul*/
     --color4: #606078; /*Morado*/
     --color5: #d8a878; /*Color humilde*/
+    --color6: #56566E; /*Morado oscuro*/
 }
 #pseudo-header{
     display: block;
     height: 50px;
     width: 100%;
     position: fixed;
-    background-color: lightgreen;
+    background-color: var(--color2);
 }
 body{
     margin: 0px;
     padding: 0px;
-    
     font-family: "Oswald",sans-serif;
+    color: var(--color6);
 }
 .cover {
     height: 400px;
@@ -51,18 +54,19 @@ main section{
 
 /*CONTENEDORES:*/
 .photo_container{
-    background-color: lightgreen;
-    border-radius: 14px;
-    border: 2px solid darkgray;
+    background-color: var(--color1);
+    border-radius: 0px 0px 14px 14px;
     display: inline-block;
-    padding: 15px 15px 15px;
+    padding: 15px 0pxpx 15px;
     margin: 10px 10px;
     transition: all 0.5s;
 }
+/*Animación*/
 .photo_container:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
+/*Parrafos*/
 .photo_container p{
     font-weight: bold;
     margin: 0px 0px;
@@ -75,18 +79,9 @@ main section{
     display: inline-block;
     font-weight: 400;
 }
+/*Imágenes*/
 .photo_container img{
-    border: 2px solid darkgray;
-    border-radius: 14px 14px 0px 0px;
     width: 200px;
-}
-
-/*HIDDEN:*/
-#descrip_section{
-    display: none;
-}
-#descrip_container img{
-    width: 300px;
 }
 
 /*ASIDE DE COMENTARIOS:*/
