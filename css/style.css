@@ -19,7 +19,6 @@ header{
 }
 main section{
     display: inline-block;
-    
     width: 100%;
 }
 .photo_container{
@@ -34,9 +33,6 @@ main section{
 .photo_container:hover{
     transform: scale(1.1);
     cursor: pointer;
-}
-.photo_container:target{
-    
 }
 .photo_container p{
     font-weight: bold;
@@ -55,3 +51,16 @@ main section{
     border-radius: 14px 14px 0px 0px;
     width: 200px;
 }
+#descrip_container{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.8);
+}
+#descrip_container div img{
+    width: 300px;
+}
+
