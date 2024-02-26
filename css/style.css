@@ -21,6 +21,8 @@ main section{
     display: inline-block;
     width: 100%;
 }
+
+/*CONTENEDORES:*/
 .photo_container{
     background-color: lightgreen;
     border-radius: 14px;
@@ -51,16 +53,12 @@ main section{
     border-radius: 14px 14px 0px 0px;
     width: 200px;
 }
+
+/*HIDDEN:*/
 #descrip_div{
     display: none;
-    z-index: 10;
-    position: fixed;
-    top: 10%;
-    bottom: 10%;
-    width: 100%;
-    background-color: rgba(44, 44, 44, 0.8);
 }
-#descrip_div div img{
+#descrip_container img{
     width: 300px;
 }
 
