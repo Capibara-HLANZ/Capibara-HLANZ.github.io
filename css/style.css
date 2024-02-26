@@ -5,7 +5,13 @@
   font-weight: 400;
   font-style: normal;
 }
-
+#pseudo-header{
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: lightgreen;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -81,5 +87,5 @@ aside{
     flex: 0.2;
     margin-top: 50px; /*Cambiar por alto del header*/
     margin-bottom: 50px; /*Cambiar por alto del footer*/
-    background-color: red;
+    background-color: lightblue;
 }
