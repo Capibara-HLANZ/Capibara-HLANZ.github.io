@@ -1,7 +1,57 @@
+/*FONTS:*/
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
     margin: 0cm;
+    font-family: "Oswald",sans-serif;
 }
 .cover {
     height: 400px;
     background-image: url(https://cdn.glitch.global/4cd10c94-fc22-4246-8ce7-7089a8df5667/rsz_nikolai-chernichenko-4dlzzxyc8_k-unsplash.jpg?v=1679416992277);
-  }
+}
+header{
+    display: none;
+}
+main section{
+    display: inline-block;
+    
+    width: 100%;
+}
+.photo_container{
+    background-color: lightgreen;
+    border-radius: 14px;
+    border: 2px solid darkgray;
+    display: inline-block;
+    padding: 15px 15px 15px;
+    margin: 10px 10px;
+    transition: all 0.5s;
+}
+.photo_container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.photo_container:target{
+    
+}
+.photo_container p{
+    font-weight: bold;
+    margin: 0px 0px;
+}
+.photo_container p:nth-child(3), .photo_container p:nth-child(4){
+    display: inline-block;
+    width: 27%;
+}
+.photo_container p:nth-child(4){
+    display: inline-block;
+    font-weight: 400;
+}
+.photo_container img{
+    border: 2px solid darkgray;
+    border-radius: 14px 14px 0px 0px;
+    width: 200px;
+}
