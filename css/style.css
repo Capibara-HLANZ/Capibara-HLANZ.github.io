@@ -51,7 +51,7 @@ main section{
     border-radius: 14px 14px 0px 0px;
     width: 200px;
 }
-#descrip_container{
+#descrip_div{
     display: none;
     z-index: 10;
     position: fixed;
@@ -60,7 +60,7 @@ main section{
     width: 100%;
     background-color: rgba(44, 44, 44, 0.8);
 }
-#descrip_container div img{
+#descrip_div div img{
     width: 300px;
 }
 
