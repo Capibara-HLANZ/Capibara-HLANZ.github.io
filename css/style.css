@@ -7,7 +7,9 @@
 }
 
 body{
-    margin: 0cm;
+    margin: 0px;
+    padding: 0px;
+    
     font-family: "Oswald",sans-serif;
 }
 .cover {
@@ -16,6 +18,18 @@ body{
 }
 header{
     display: none;
+}
+#cuerpo_pagina{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+main{
+    flex: 1;
+    vertical-align: top;
+    margin: 50px 0px;
+    display: inline-block;
+    width: 82%;
 }
 main section{
     display: inline-block;
@@ -55,10 +69,17 @@ main section{
 }
 
 /*HIDDEN:*/
-#descrip_div{
+#descrip_section{
     display: none;
 }
 #descrip_container img{
     width: 300px;
 }
 
+/*ASIDE DE COMENTARIOS:*/
+aside{
+    flex: 0.2;
+    margin-top: 50px; /*Cambiar por alto del header*/
+    margin-bottom: 50px; /*Cambiar por alto del footer*/
+    background-color: red;
+}
