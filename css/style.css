@@ -21,6 +21,7 @@
     width: 100%;
     position: fixed;
     background-color: var(--color2);
+    z-index: 1000;
 }
 body{
     margin: 0px;
@@ -43,7 +44,7 @@ header{
 main{
     flex: 1;
     vertical-align: top;
-    margin: 50px 0px;
+    margin: 60px 0px;
     display: inline-block;
     width: 82%;
 }
@@ -55,29 +56,24 @@ main section{
 /*CONTENEDORES:*/
 .photo_container{
     background-color: var(--color1);
-    border-radius: 0px 0px 14px 14px;
+    border-radius: 0px ;                        /*Provisional*/
     display: inline-block;
-    padding: 15px 0pxpx 15px;
     margin: 10px 10px;
     transition: all 0.5s;
+
+    box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.62);
 }
 /*Animación*/
 .photo_container:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+    transform: scale(1.5);
 }
 /*Parrafos*/
 .photo_container p{
-    margin: 0px 10px;
+    margin: 2px 20px;
 
     font-weight: bold;
 }
 .photo_container p span{
-    font-weight: 400;
-}
-
-.photo_container p:nth-child(4){
-    display: inline-block;
     font-weight: 400;
 }
 /*Imágenes*/
@@ -88,8 +84,8 @@ main section{
 /*ASIDE DE COMENTARIOS:*/
 aside{
     flex: 0.2;
-    margin-top: 50px; /*Cambiar por alto del header*/
-    margin-bottom: 50px; /*Cambiar por alto del footer*/
+    margin-top: 50px;                   /*Cambiar por alto del header*/
+    margin-bottom: 50px;                /*Cambiar por alto del footer*/
     background-color: lightblue;
 }
 aside p{
