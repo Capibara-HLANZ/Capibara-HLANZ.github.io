@@ -15,6 +15,8 @@
     --color5: #d8a878; /*Color humilde*/
     --color6: #56566E; /*Morado oscuro*/
 }
+
+/*Para sacar datos para el header*/
 #pseudo-header{
     display: block;
     height: 50px;
