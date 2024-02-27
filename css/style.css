@@ -99,8 +99,9 @@ main section{
     display: inline-block;
     color: var(--color6);
     transform: scale(1.5);
-    position: relative;
-    left: 10%;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
 }
 /*DESCRIPCIONES:*/
 .description{
