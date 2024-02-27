@@ -71,23 +71,36 @@ main section{
     z-index: 900;
 }
 /*Parrafos*/
-.photo_container > p:not(.description){
+.photo_container div{
+    margin-right: 100px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.photo_container div > p:not(.description){
     margin: 0px;
-    padding: 0px 100px 0px 20px;
     font-weight: bold;
 }
-.photo_container p:first-of-type{
+.photo_container div p:first-of-type{
     font-size: 24px;
 }
-.photo_container p:nth-child(3){
+.photo_container div p:nth-child(3){
     margin-bottom: 5px;
 }
-.photo_container p span{
+.photo_container div p span{
     font-weight: 400;
 }
 /*Imágenes*/
 .photo_container img{
+    display: block;
     width: 300px;
+}
+/*Iconos*/
+.fa-solid{
+    display: inline-block;
+    color: var(--color6);
+    transform: scale(1.5);
+    position: relative;
+    left: 10%;
 }
 /*DESCRIPCIONES:*/
 .description{
