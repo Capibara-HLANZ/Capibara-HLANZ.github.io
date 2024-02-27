@@ -53,11 +53,11 @@ main section{
     width: 100%;
 }
 
-/*CONTENEDORES:*/
+/*CONTENEDORES PRINCIPALES:*/
 .photo_container{
-    background-color: var(--color2);
-    border-radius: 0px ;                        /*Provisional*/
     display: inline-block;
+    position: relative;
+    background-color: var(--color2);
     margin: 10px 10px;
     padding-bottom: 5px;
     transition: all 0.5s;
@@ -66,14 +66,19 @@ main section{
 /*Animación*/
 .photo_container:hover{
     transform: scale(1.3);
+    z-index: 900;
 }
 /*Parrafos*/
-.photo_container p{
-    margin: 0px 100px 0px 20px;
+.photo_container > p:not(.description){
+    margin: 0px;
+    padding: 0px 100px 0px 20px;
     font-weight: bold;
 }
 .photo_container p:first-of-type{
     font-size: 24px;
+}
+.photo_container p:nth-child(3){
+    margin-bottom: 5px;
 }
 .photo_container p span{
     font-weight: 400;
@@ -82,6 +87,20 @@ main section{
 .photo_container img{
     width: 300px;
 }
+/*DESCRIPCIONES:*/
+.description{
+    display: none;
+    margin: 0px;
+    padding: 5px 5%;
+    width: 200px;
+    background-color: var(--color1);
+}
+.photo_container:hover .description{
+    display: block;
+    position: absolute;
+    width: 90%;
+}
+
 
 /*ASIDE DE COMENTARIOS:*/
 aside{
@@ -89,6 +108,7 @@ aside{
     margin-top: 50px;                   /*Cambiar por alto del header*/
     margin-bottom: 50px;                /*Cambiar por alto del footer*/
     background-color: lightblue;
+    font-size: 20px;
 }
 aside p{
     margin-left: 20px;
