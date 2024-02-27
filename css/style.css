@@ -130,3 +130,13 @@ aside p{
     margin-left: 20px;
     margin-right: 10px;
 }
+/*Formulario*/
+#email{
+    display: block;
+    width: 95%; /* Ajusta al ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px 0; /* Margen externo */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 4px; /* Bordes redondeados */
+    font-family: Arial, sans-serif; /* Tipo de fuente del texto ingresado */
+}
