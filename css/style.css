@@ -94,7 +94,7 @@ main section{
     display: none;
     margin: 0px;
     padding: 5px 5%;
-    width: 200px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.40), 0px -5px 10px -5px rgba(0,0,0,0);
     background-color: var(--color1);
 }
 .photo_container:hover .description{
@@ -102,7 +102,6 @@ main section{
     position: absolute;
     width: 90%;
 }
-
 
 /*ASIDE DE COMENTARIOS:*/
 aside{
