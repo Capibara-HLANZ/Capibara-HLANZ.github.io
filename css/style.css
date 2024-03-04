@@ -71,6 +71,7 @@ nav ul li:hover{
 
 nav ul li:hover a{
     transform: scale(1.1);
+    height: 35px;
 }
 
 
@@ -106,7 +107,7 @@ main section{
 }
 /*Animación*/
 .photo_container:hover{
-    transform: scale(1.3);
+    transform: scale(1.15);
     z-index: 900;
 }
 /*Parrafos*/
@@ -169,12 +170,52 @@ aside p{
     margin-right: 10px;
 }
 /*Formulario*/
+#comentario_formulario{
+    font-family: ;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1% 5%;
+    background-color: var(--color2);
+}
+
+#comentario_formulario p{
+    margin: 0px 0px 0px 3px;
+}
+
+#nombre{
+    display: block;
+    width: 50%;
+    padding: 10px; 
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-family: Arial, sans-serif; 
+}
 #email{
     display: block;
-    width: 95%; /*Ajusta al ancho del contenedor*/
-    padding: 10px; /*Espaciado interno*/
-    margin: 5px 0; /*Margen externo*/
-    border: 1px solid #ccc; /*Borde del input*/
-    border-radius: 4px; /* Bordes redondeados */
-    font-family: Arial, sans-serif; /* Tipo de fuente del texto ingresado */
+    width: 95%; 
+    padding: 10px;
+    margin: 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-family: Arial, sans-serif; 
+}
+#pregunta{
+    display: block;
+    padding: 10px;
+    margin: 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-family: Arial, sans-serif; 
+    size: 90;
+}
+
+#comentario_formulario button{
+    display: block;
+    padding: 10px;
+    margin: 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-family: Arial, sans-serif; 
+    size: 90;
 }

@@ -28,10 +28,10 @@
                     <a class="nav-link" href="#"> Inicio </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Contactos </a>
+                    <a class="nav-link" href="#"> Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Sobre nosotros </a>
+                    <a class="nav-link" href="#"> Adopta </a>
                 </li>
             </ul>
     </header>
@@ -149,13 +149,16 @@
             </div>
             <div id="comentario_formulario">
                 <form method="post" action="">
+                    <p>Nombre (opcional):</p>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <p>E-mail:</p>
                     <input type="email" id="email" placeholder="Correo electrónico">
+                    <p>Pregunta:</p>
+                    <textarea id="pregunta" cols="45" rows="10" placeholder="Escribe tu pregunta aqui."></textarea>
+                    <button type="submit" onclick="enviarmail()" value="Enviar">Enviar</button>
                 </form>
             </div>
-        </aside>>
+        </aside>
     </div>
-    <footer>
-
-    </footer>
 </body>
 </html>
