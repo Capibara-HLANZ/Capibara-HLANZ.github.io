@@ -171,7 +171,6 @@ aside p{
 }
 /*Formulario*/
 #comentario_formulario{
-    font-family: ;
     margin-left: 5%;
     margin-right: 5%;
     padding: 1% 5%;
@@ -213,6 +212,8 @@ aside p{
     display: block;
     width: 20%;
     padding: 10px;
+    color: white;
+    background-color: var(--color3);
     border: 1px solid #ccc;
     border-radius: 4px; 
     font-family: Arial, sans-serif; 
