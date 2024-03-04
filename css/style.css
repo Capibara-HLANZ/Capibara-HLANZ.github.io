@@ -17,28 +17,66 @@
     --color7: #add8e6; /*Azul claro*/
 }
 
-/*Para sacar datos para el header*/
-#pseudo-header{
-    display: block;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    background-color: var(--color2);
-    z-index: 1000;
-}
 body{
     margin: 0px;
     padding: 0px;
     font-family: "Oswald",sans-serif;
     color: var(--color6);
 }
-.cover {
-    height: 400px;
-    background-image: url(https://cdn.glitch.global/4cd10c94-fc22-4246-8ce7-7089a8df5667/rsz_nikolai-chernichenko-4dlzzxyc8_k-unsplash.jpg?v=1679416992277);
+
+/*HEADER*/
+nav{
+    display: inline-block;
+    padding: 0px 0px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--color2);
+    z-index: 1000;
+    text-align: center;
 }
-header{
-    display: none;
+
+nav a p, nav ul, nav ul li, nav ul li a{
+    transition: all 0.5s;
+    display: inline-block;
+    margin: 0px 0px;
+    text-decoration: none;
+    color: var(--color6);
 }
+.nav-logo{
+    margin-right: 300px;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav ul {
+    margin-top: 3px;
+    margin-right: 700px;
+    list-style-type: none;
+}
+ nav img{
+    margin-top: 8px;
+    height: 20px;
+ }
+
+nav a:not(.nav-logo) {
+    margin: 0px 20px;
+    height: 40px;
+    font-size: 22px;
+}
+
+nav ul li:hover{
+    background-color: var(--color7);
+}
+
+nav ul li:hover a{
+    transform: scale(1.1);
+}
+
+
+
+
+/*CUERPO*/
 #cuerpo_pagina{
     display: flex;
     flex-direction: row;
@@ -121,8 +159,8 @@ main section{
 /*ASIDE DE COMENTARIOS:*/
 aside{
     flex: 0.3;
-    margin-top: 50px;                   /*Cambiar por alto del header*/
-    margin-bottom: 50px;                /*Cambiar por alto del footer*/
+    margin-top: 40px;                   /*Cambiar por alto del header*/
+    margin-bottom: 20px;                /*Cambiar por alto del footer*/
     background-color: var(--color7);
     font-size: 20px;
 }
@@ -133,10 +171,10 @@ aside p{
 /*Formulario*/
 #email{
     display: block;
-    width: 95%; /* Ajusta al ancho del contenedor */
-    padding: 10px; /* Espaciado interno */
-    margin: 5px 0; /* Margen externo */
-    border: 1px solid #ccc; /* Borde del input */
+    width: 95%; /*Ajusta al ancho del contenedor*/
+    padding: 10px; /*Espaciado interno*/
+    margin: 5px 0; /*Margen externo*/
+    border: 1px solid #ccc; /*Borde del input*/
     border-radius: 4px; /* Bordes redondeados */
     font-family: Arial, sans-serif; /* Tipo de fuente del texto ingresado */
 }
