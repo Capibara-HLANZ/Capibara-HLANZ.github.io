@@ -54,13 +54,17 @@ nav ul {
     margin-right: 700px;
     list-style-type: none;
 }
+nav ul li{
+    margin-right: 0px;
+    margin-left: 0px;
+}
  nav img{
     margin-top: 8px;
     height: 20px;
  }
 
 nav a:not(.nav-logo) {
-    margin: 0px 20px;
+    margin: 0px 10px;
     height: 40px;
     font-size: 22px;
 }
