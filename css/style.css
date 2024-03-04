@@ -207,15 +207,13 @@ aside p{
     border: 1px solid #ccc;
     border-radius: 4px; 
     font-family: Arial, sans-serif; 
-    size: 90;
 }
 
 #comentario_formulario button{
     display: block;
+    width: 20%;
     padding: 10px;
-    margin: 5px 0; 
     border: 1px solid #ccc;
     border-radius: 4px; 
     font-family: Arial, sans-serif; 
-    size: 90;
 }

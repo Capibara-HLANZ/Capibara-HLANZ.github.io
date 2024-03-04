@@ -148,17 +148,28 @@
                 </div>
             </div>
             <div id="comentario_formulario">
-                <form method="post" action="">
+                <form id="formulario_pregunta" method="post">
                     <p>Nombre (opcional):</p>
                     <input type="text" id="nombre" placeholder="Nombre">
                     <p>E-mail:</p>
                     <input type="email" id="email" placeholder="Correo electrónico">
                     <p>Pregunta:</p>
                     <textarea id="pregunta" cols="45" rows="10" placeholder="Escribe tu pregunta aqui."></textarea>
-                    <button type="submit" onclick="enviarmail()" value="Enviar">Enviar</button>
+                    <button type="submit" onclick="enviarpregunta" value="Enviar">Enviar</button>
                 </form>
             </div>
         </aside>
     </div>
+    <script>
+        function enviarpregunta(){
+            var formulario_element = document.getElementById('formulario_pregunta');
+            var nombre = formulario_element.nombre.value;
+            var email = formulario_element.email.value;
+            var pregunta = formulario_element.pregunta.value;
+            var string ='Nombre: '+nombre+'%0D%0A'+pregunta;
+
+            window.location.href = "mailto:ejemploemail@ej-mail.com?subject=Nueva pregunta&body="+cadena;
+        }
+    </script>
 </body>
 </html>
